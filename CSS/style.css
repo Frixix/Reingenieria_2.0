@@ -1,0 +1,833 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/* Reset general básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* ----------- Normalize Móvil Personalizado ----------- */
+
+/* Ajustes de escala en móviles */
+html {
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+}
+
+/* Evita desbordes horizontales en móviles */
+body {
+    width: 100vw;
+    overflow-x: hidden;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+}
+
+/* Imágenes siempre responsivas */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Eliminar márgenes y paddings por defecto de textos */
+h1, h2, h3, h4, h5, h6,
+p, figure, blockquote {
+    margin: 0;
+    padding: 0;
+}
+
+/* Inputs, botones, selects reseteados para ser uniformes */
+input, button, textarea, select {
+    font: inherit;
+    margin: 0;
+    padding: 0;
+    border: none;
+    background: none;
+    color: inherit;
+}
+
+/* Mejora la accesibilidad del botón */
+button {
+    cursor: pointer;
+}
+
+/* Asegura que no haya doble scroll horizontal */
+html, body {
+    overflow-x: hidden;
+}
+
+/* ----------- Fin Normalize ----------- */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+html {
+    scroll-behavior: smooth;
+  }
+
+body{
+        font-family: "Poppins", sans-serif;
+}
+
+.container {
+   width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: var(--padding-container);
+}
+
+.header {
+    background-image: linear-gradient(
+        rgba(0,0,0,0.7),
+        rgba(0,0,0,0.7)),
+        url(../imagenes_/Fondo2.png);
+        background-position: center bottom;
+        background-repeat: no-repeat;
+        background-size: cover;
+        min-height: 70vh;
+        display: flex;
+        align-items: center;
+}
+
+.header::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(180deg, #0000008c 0%, #0000008c 100%), url(../imagenes_/Fondo2.png);
+    background-size: cover;
+    clip-path: polygon(0 0, 100% 0, 100% 80%, 50% 95%, 0 80%);
+    z-index: -1;
+}
+.menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.nav__menu{
+    margin-left: auto;
+    cursor: pointer;
+    display: none;
+}
+.nav__img{
+    display: block;
+    width: 30px;
+
+}
+
+.logo{
+    color: #fffdfc;
+    font-size: 25px;
+    font-weight: 800;
+
+}
+
+.menu .navbar ul li {
+    position: relative;
+    float: left;
+}
+.menu .navbar ul li a {
+    font-size: 18px;
+    padding: 20px;
+    color: #fffdfc;
+    display: block;
+    font-weight: 600;
+}
+
+.menu .navbar ul li a:hover {
+    color: #5573a8; ;
+}
+#menu {
+    display: none;
+
+}
+.menu.icono {
+    width: 25px;
+}
+.menu label {
+    cursor: pointer;
+    display: none;
+}
+.header-content {
+    text-align: center;
+}
+.nav__close {
+    display: var(--show, none);
+}
+.nav__img {
+    display: block;
+    width: 30px;
+}
+.nav__close {
+    display: var(--show, none);
+}
+
+/* contenido*/
+
+.header-content h1{ 
+    font-size: 75px;
+    line-height: 80px;
+    color: #f9fafc;
+    text-transform: uppercase;
+    margin-bottom: 35px;
+}
+.header-content p {
+    font-size: 16px;
+    color: #c5c5c5;
+    padding: 0 250px;
+    margin-bottom: 25px;
+
+}
+
+.btn-1{
+    display: inline-block;
+    padding: 11px 35px;
+    background-color: #427ce1;
+    color: #f9fafc;
+    text-transform: uppercase;
+}
+
+.btn-1:hover {
+    background-color: #5573a8;
+}
+
+.escupideras {
+    padding: 100px 0;
+    background-color: #b5b5b5;
+    position: relative;
+}
+.escupideras-content {
+    text-align: center ;
+}
+.escupideras-content h2 {
+    font-size: 55px;
+    line-height: 70px;
+    color: #323337;
+    text-transform: uppercase;
+    padding: 0 250px;
+    margin-bottom: 15px ;
+}
+.txt-p {
+    font-size: 16px;
+    color: #414247;
+    padding: 0 250px;
+    margin-bottom: 35px;
+}
+.modulos-group{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+.modulos_1{
+    padding: 0 25px;
+}
+.icono55-img {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.reingenieria_y_comercio-img {
+    position: absolute;
+    top: 0;
+    right: 0;   
+
+}
+
+.modulos_1 h3{
+    color: #323337;
+    font-size: 20px;
+    margin-bottom: 15px;
+    
+}
+.servicios {
+    background-image: linear-gradient(
+        rgba( 0, 0, 0, 0.7),
+        rgba( 0, 0, 0, 0.7)),
+        url(../imagenes_/termoformado.jpg);
+
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        padding: 100px 0;
+
+
+
+        display: flex;
+        align-items: center;
+}
+.servicios-content {
+    text-align: center;
+}
+.servicios-content h2{
+    font-size: 55px;
+    line-height: 70px;
+    color: #f9fafc;
+    text-transform: uppercase;
+    margin-bottom: 50PX;
+}
+.servicios-content p {
+    font-size: 16px;
+    color: #c5c5c5;
+    margin-bottom: 50px;
+    padding: 0 100px;
+}
+
+.servicios-group {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+
+}
+.servicios1 h3{
+    color: #eaeaea;
+    font-size: 18px;
+}
+
+/*preguntas*/
+
+.questions {
+    background-color: #c0c0c0; 
+  }
+
+  .questions {
+    background-color: #F7F7F7; 
+    text-align: center;
+    padding: 20px; 
+   
+   
+  }
+.questions__container{
+    display: grid;
+    gap: 2em;
+    padding-top: 50px;
+    padding-bottom: 100px;
+}
+
+
+.questions__padding{
+    padding: 0;
+    transition: padding .3s;
+    border: 1px solid #000069;
+    border-radius: 6px;
+}
+
+.questions__padding--add{
+    padding-bottom: 30px;
+}
+
+.questions__answer{
+    padding: 0 30px 0;
+    overflow: hidden;
+}
+
+.questions__title{
+    text-align: left;
+    display: flex;
+    font-size: 20px;
+    padding: 30px 0 30px;
+    cursor: pointer;
+    color: var(--color-title);
+    justify-content: space-between;
+}
+
+.questions__arrow{
+    border-radius: 50%;
+    background-color: var(--color-title);
+    width: 25px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: flex-end;
+    margin-left: 10px;
+    transition:  transform .3s;
+}
+
+.questions__arrow--rotate{
+    transform: rotate(180deg);
+}
+
+.questions__show{
+    text-align: left;
+    height: 0;
+    transition: height .3s;
+}
+
+.questions__img{
+    display: block;
+}
+
+.questions__copy{
+    width: 60%;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+
+/* Seccion Contacto */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Work Sans', sans-serif;
+}
+/* Estilos generales del cuerpo */
+.Contacto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0.85),
+        rgba(43, 44, 46, 0.9)
+    );
+    color: #ffffff;
+    padding: 40px 20px;
+    height: auto;
+}
+
+.contenedor {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+    max-width: 800px;
+    padding: 40px;
+    width: 100%;
+}
+
+/* Estilos de la caja de información de contacto */
+.box-info {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.box-info h1 {
+    text-align: center;
+    font-size: 2rem;
+}
+.data {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    font-size: 1.1rem;
+}
+.data p i {
+    color: cadetblue;
+    margin-right: 10px;
+    font-size: 1.5rem;
+}
+
+/* Estilos de los enlaces sociales */
+.links {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+}
+
+.links a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-color: #ffffff;
+    color: #066e6e;
+    text-align: center;
+    line-height: 40px;
+    font-size: 1.25rem;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.links a:hover {
+    background-color: #066e6e;
+    color: #ffffff;
+}
+/* Estilos del formulario */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.input-box {
+    position: relative;
+}
+
+.input-box input,
+.input-box textarea {
+    width: 100%;
+    padding: 12px 15px;
+    padding-right: 45px;
+    background: rgba(0, 0, 0, 0.1);
+    border: 2px solid transparent;
+    outline: none;
+    color: #ffffff;
+    transition: border-bottom 0.4s ease;
+    letter-spacing: 1px;
+    font-size: 1rem;
+}
+
+.input-box textarea {
+    height: 100px;
+}
+
+.input-box i {
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%);
+    font-size: 1.25rem;
+    color:#fff
+}
+/* Efecto de enfoque en los campos de entrada */
+.input-box input:focus,
+.input-box textarea:focus {
+    border-bottom: 2px solid #0044ff;
+}
+
+.input-box input:focus::placeholder,
+.input-box textarea:focus::placeholder {
+    color: transparent;
+}
+
+/* Botón de enviar */
+form button {
+    cursor: pointer;
+    background-color: transparent;
+    border: 2px solid #ffff;
+    width: fit-content;
+    display: block;
+    margin: 20px auto;
+    padding: 10px 22px;
+    font-size: 16px;
+    color: #ffffff;
+    position: relative;
+    z-index: 10;
+    text-decoration: none;
+    outline: none;
+}
+
+form button:hover {
+    background-color: transparent;
+}
+
+form button .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%; 
+    background-color: #44a4c2;
+    transition: width 1.4s ease; 
+    z-index: -1;
+}
+
+form button:hover .overlay {
+    width: 100%;
+}
+
+/*PIE DE PAGINA*/ 
+
+footer{
+    background-color: #252A2E;
+    color: #fff;
+    padding: 30px 0 20px 0;
+    text-align: center;
+    position: relative;
+    width: 100%;
+}footer .redes {
+    margin-bottom: 15px;
+}
+
+footer .redes a {
+    color: #fff;
+    display: inline-block;
+    text-decoration: none;
+    border: 1px solid #fff;
+    border-radius: 100%;
+    width: 38px;
+    height: 38px;
+    line-height: 38px;
+    margin: 15px 5px;
+    font-size: 18px;
+    transition: 0.3s;
+}
+    
+
+footer .redes a:hover {
+    color: aqua;
+}
+
+footer .arriba {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background-color: #1CB698;
+    color: #fff;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -25px;
+    border-radius: 50%;
+    line-height: 50px;
+    font-size: 18px;
+}
+footer .grupo-1 .box figure img {
+    width: 100px; 
+    height: auto; 
+}
+
+.pie-pagina {
+    width: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.4)), url(/imagenes_/Mun.jpg) no-repeat center center/cover;
+    color: #fff;
+}
+.pie-pagina .grupo-1 {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+    padding: 45px 0px;
+}
+
+.pie-pagina .grupo-1 .box figure {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pie-pagina .grupo-1 .box figure img {
+    width: 250px;
+}
+
+.pie-pagina .grupo-1 .box h2 {
+    color: #fff;
+    margin-bottom: 25px;
+    font-size: 20px;
+}
+
+.pie-pagina .grupo-1 .box p {
+    color: #efefef;
+    margin-bottom: 10px;
+}
+
+.pie-pagina .grupo-1 .red-social a {
+    display: inline-block;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color: #fff;
+    margin-right: 10px;
+    background-color: #0d2033;
+    text-align: center;
+    transition: all 300ms ease;
+}
+
+.pie-pagina .grupo-1 .red-social a:hover {
+    color: aqua;
+}
+
+.pie-pagina .grupo-2 {
+    background-color: #171d22;
+    padding: 15px 10px;
+    text-align: center;
+    color: #fff;
+}
+
+.pie-pagina .grupo-2 small {
+    font-size: 15px;
+}
+
+/* Cambiar color de los placeholders a blanco */
+::placeholder {
+    color: #ffffff;
+    opacity: 3; /* Asegura que el blanco sea completamente visible */
+}
+
+/* Opcional para compatibilidad con diferentes navegadores */
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: #ffffff;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+    color: #ffffff;
+}
+/* media queries*/
+
+@media(max-width:800px){
+    /* Mostrar icono de menú hamburguesa */
+    .nav__menu{
+        display: block;
+    }
+
+    /* Menú desplegable */
+    .nav__link--menu{
+        position: fixed;
+        background-image: linear-gradient(
+            rgba(0,0,0,0.7),
+            rgba(0,0,0,0.7)),
+            url(../imagenes_/nav_menu\ 1.jpg);
+        background-position: center bottom;
+        background-repeat: no-repeat;
+        background-size: cover;
+        min-height: 70vh;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        z-index: 100;
+        opacity: 0;
+        pointer-events: none;
+        transition: .7s opacity;
+    }
+
+    /* Mostrar el menú cuando se activa */
+    .nav__link--show{
+        opacity: 1;
+        pointer-events: unset;
+    }
+
+    .nav__close{
+        position: absolute;
+        top: 30px;
+        right: 30px;
+        width: 30px;
+        cursor: pointer;
+    }
+
+    /* Ajustar textos del encabezado */
+    .header-content h1 {
+        font-size: 45px;
+        line-height: 55px;
+    }
+
+    /* Reducimos el padding para que no se aplaste el texto */
+    .header-content p,
+    .escupideras-content h2,
+    .txt-p,
+    .servicios-content p {
+        padding: 0 20px;
+    }
+
+    /* Modulos y servicios ahora en columna */
+    .modulos-group,
+    .servicios-group {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    /* Ajuste en navbar */
+    .menu .navbar ul li a {
+        font-size: 14px;
+        padding: 12px;
+    }
+
+    .btn-1 {
+        padding: 8px 25px;
+        font-size: 14px;
+    }
+
+    /* Footer adaptable */
+    .footer__container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    /* Formulario y pie de página ahora de una sola columna */
+    .contenedor {
+        grid-template-columns: 1fr;
+        padding: 20px;
+    }
+
+    .pie-pagina .grupo-1 {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+}
+
+@media (max-width:600px){
+    /* Más ajustes para pantallas aún más pequeñas */
+
+    /* Ajustamos tamaño del título principal */
+    .header-content h1 {
+        font-size: 1.5rem;
+        line-height: 2rem;
+    }
+
+    /* Ajuste del subtitulo */
+    .escupideras-content h2 {
+        font-size: 1.2rem;
+        line-height: 1.5rem;
+    }
+
+    .header-content p {
+        font-size: 1rem;
+    }
+
+    .questions__title{
+        font-size: 1rem;
+    }
+
+    .footer__title{
+        justify-self: start;
+        margin-bottom: 15px;
+    }
+
+    .nav--footer{
+        padding-bottom: 60px;
+    }
+
+    .nav__link--footer{
+        justify-content: space-between;
+    }
+
+    .footer__inputs{
+        flex-wrap: wrap;
+    }
+
+    .footer__input{
+        flex-basis: 100%;
+        margin: 0;
+        margin-bottom: 16px;
+    }
+
+    .footer__submit{
+        margin-right: auto;
+        margin-left: 0;
+    }
+}
